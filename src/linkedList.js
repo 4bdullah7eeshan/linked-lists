@@ -63,7 +63,25 @@ export default function linkedList() {
     }
 
     function pop() {
-        
+        if (!head) {
+            return;
+        }
+
+        if (size === 1) {
+            head = null;
+            tail = null;
+        } else {
+            let currentNode = head;
+
+            while (currentNode.nextNode !== tail) {
+                currentNode = currentNode.nextNode;
+            }
+            
+            currentNode.nextNode = null;
+            tail = currentNode;
+        }
+
+        size--;
     }
 
     function contains(value) {
