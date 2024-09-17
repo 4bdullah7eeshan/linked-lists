@@ -1,4 +1,4 @@
-import linkedList from "./linkedList";
+import linkedList from "./linkedList.js";
 // I don't think I will need to import node.js. If needed include that here too!
 
 const list = new linkedList();
