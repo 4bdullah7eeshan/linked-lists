@@ -8,32 +8,32 @@ export default function linkedList() {
     size = 0;
 
     function append(value) {
-        const node = node();
+        const newNode = node();
         
-        node.value = value;
+        newNode.value = value;
 
         if (!head) {
-            head = node;
-            tail = node;
+            head = newNode;
+            tail = newNode;
         } else {
-            tail.nextNode = node;
-            tail = node;
+            tail.nextNode = newNode;
+            tail = newNode;
         }
 
         size++;
     }
 
     function prepend(value) {
-        const node = node();
+        const newNode = node();
         
-        node.value = value;
+        newNode.value = value;
 
         if (!head) {
-            head = node;
-            tail = node;
+            head = newNode;
+            tail = newNode;
         } else {
-            node.nextNode = head;
-            head = node;
+            newNode.nextNode = head;
+            head = newNode;
         }
 
         size++;
