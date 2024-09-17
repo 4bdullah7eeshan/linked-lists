@@ -52,7 +52,15 @@ export default function linkedList() {
     }
 
     function at(index) {
-
+        if (index < 0 || index >= size) {
+            return null;
+        } else {
+            let currentNode = head;
+            for (let i = 0; i < index; i++) {
+                currentNode = currentNode.nextNode;
+            }
+            return currentNode;
+        }
     }
 
     function pop() {
