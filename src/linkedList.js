@@ -55,10 +55,13 @@ export default function linkedList() {
         if (index < 0 || index >= size) {
             return null;
         }
+
         let currentNode = head;
+        
         for (let i = 0; i < index; i++) {
             currentNode = currentNode.nextNode;
         }
+
         return currentNode;
     }
 
@@ -76,7 +79,7 @@ export default function linkedList() {
             while (currentNode.nextNode !== tail) {
                 currentNode = currentNode.nextNode;
             }
-            
+
             currentNode.nextNode = null;
             tail = currentNode;
         }
