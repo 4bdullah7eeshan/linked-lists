@@ -96,11 +96,23 @@ export default function linkedList() {
             }
             currentNode = currentNode.nextNode;
         }
-        
+
         return false;
     }
 
     function find(value) {
+        let currentNode = head;
+        let index = 0;
+
+        while (currentNode) {
+            if (currentNode.value === value) {
+                return index;
+            }
+            currentNode = currentNode.nextNode;
+            index++;
+        }
+        
+        return null;
 
     }
 
