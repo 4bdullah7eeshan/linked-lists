@@ -44,7 +44,7 @@ export default function linkedList() {
     }
 
     function head() {
-
+        return head;
     }
 
     function tail() {
