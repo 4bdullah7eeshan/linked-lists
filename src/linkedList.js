@@ -24,7 +24,19 @@ export default function linkedList() {
     }
 
     function prepend(value) {
+        const node = node();
+        
+        node.value = value;
 
+        if (!head) {
+            head = node;
+            tail = node;
+        } else {
+            node.nextNode = head;
+            head = node;
+        }
+
+        size++;
     }
 
     function size() {
