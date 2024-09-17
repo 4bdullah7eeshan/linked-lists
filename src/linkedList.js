@@ -39,15 +39,15 @@ export default function linkedList() {
         size++;
     }
 
-    function size() {
+    function getSize() {
         return size;
     }
 
-    function head() {
+    function getHead() {
         return head;
     }
 
-    function tail() {
+    function getTail() {
         return tail;
     }
 
@@ -141,9 +141,9 @@ export default function linkedList() {
     return {
         append,
         prepend,
-        size,
-        head,
-        tail,
+        getSize,
+        getHead,
+        getTail,
         at,
         pop,
         contains,
