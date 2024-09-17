@@ -48,7 +48,7 @@ export default function linkedList() {
     }
 
     function tail() {
-
+        return tail;
     }
 
     function at(index) {
