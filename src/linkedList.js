@@ -1,6 +1,26 @@
-export default function linkedList() {
-    function append(value) {
+import node from "./node";
 
+export default function linkedList() {
+
+    let head, tail, size;
+    head = null;
+    tail = null;
+    size = 0;
+
+    function append(value) {
+        const node = node();
+        
+        node.value = value;
+
+        if (!head) {
+            head = node;
+            tail = node;
+        } else {
+            tail.nextNode = node;
+            tail = node;
+        }
+
+        size++;
     }
 
     function prepend(value) {
