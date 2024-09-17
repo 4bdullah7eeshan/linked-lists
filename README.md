@@ -8,8 +8,8 @@ Here is an implementation of the **Linked List** data structure in JavaScript in
 
 The modules (in `src`) contain the following:
 
-- A node() factory, containing a `value` property and a `nextNode` property.
-- A linkedList() factory, which represents the full linked list including the following functions:
+- A `node()` factory, containing a `value` property and a `nextNode` property.
+- A `linkedList()` factory, which represents the full linked list including the following functions:
 
     - `append(value)` adds a new node containing `value` to the end of the list.
     - `prepend(value)` adds a new node containing `value` to the start of the list.
