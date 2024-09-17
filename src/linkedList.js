@@ -124,7 +124,7 @@ export default function linkedList() {
             result += `( ${currentNode.value} ) -> `;
             currentNode = currentNode.nextNode;
         }
-        
+
         result += 'null';
         return result;
 
