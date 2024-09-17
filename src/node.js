@@ -1,4 +1,4 @@
-function node() {
+export default function node() {
     const value = null;
     const nextNode = null;
 

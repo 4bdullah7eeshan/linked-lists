@@ -1,4 +1,4 @@
-function linkedList() {
+export default function linkedList() {
     function append(value) {
 
     }
@@ -44,7 +44,22 @@ function linkedList() {
     }
 
     function removeAt(index) {
-        
+
     }
+
+    return {
+        append,
+        prepend,
+        size,
+        head,
+        tail,
+        at,
+        pop,
+        contains,
+        find,
+        toString,
+        insertAt,
+        removeAt,
+    };
 
 }
