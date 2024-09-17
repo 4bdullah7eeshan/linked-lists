@@ -88,7 +88,16 @@ export default function linkedList() {
     }
 
     function contains(value) {
+        let currentNode = head;
 
+        while (currentNode) {
+            if (currentNode.value === value) {
+                return true;
+            }
+            currentNode = currentNode.nextNode;
+        }
+        
+        return false;
     }
 
     function find(value) {
