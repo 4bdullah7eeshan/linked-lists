@@ -1,0 +1,13 @@
+{
+  "name": "linked-lists",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Implementation of the Linked List data structure in JavaScript including its essential methods and functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Abdullah Zeeshan",
+  "license": "ISC"
+}
