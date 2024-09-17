@@ -111,12 +111,22 @@ export default function linkedList() {
             currentNode = currentNode.nextNode;
             index++;
         }
-        
+
         return null;
 
     }
 
     function toString() {
+        let result = '';
+        let currentNode = head;
+
+        while (currentNode) {
+            result += `( ${currentNode.value} ) -> `;
+            currentNode = currentNode.nextNode;
+        }
+        
+        result += 'null';
+        return result;
 
     }
 
