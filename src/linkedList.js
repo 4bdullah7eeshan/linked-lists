@@ -40,7 +40,7 @@ export default function linkedList() {
     }
 
     function size() {
-
+        return size;
     }
 
     function head() {
